@@ -1,0 +1,46 @@
+import Image from "next/image";
+import React from "react";
+
+export const Hero = () => {
+  const myImage = "/images/me1.jpg";
+  return (
+    <section className="w-full flex flex-col items-center mt-10">
+      {/* profile */}
+      <div className="border w-fit rounded-full p-4">
+        <div className="border w-fit rounded-full p-2 shadow shadow-muted-foreground">
+          <Image
+            src={myImage}
+            alt="my photo"
+            height={100}
+            width={100}
+            className="rounded-full"
+          />
+        </div>
+      </div>
+
+      {/* Text Content */}
+      <div className="mt-8 text-center max-w-2xl space-y-5">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+          <span className="wave">👋</span> {"Hey, I'm "}
+          <span className="">Vinod</span>!
+        </h1>
+
+        <p className="text-xl md:text-xl font-semibold text-muted-foreground">
+          Full-Stack Developer | Frontend Developer
+        </p>
+
+        <p className="text-lg md:text-lg text-muted-foreground/80 leading-relaxed">
+          Crafting{" "}
+          <span className="font-medium text-foreground/60">
+            scalable, user-centric applications
+          </span>{" "}
+          with modern web technologies and
+          <span className="font-medium text-foreground/60">
+            {" "}
+            clean architecture.
+          </span>
+        </p>
+      </div>
+    </section>
+  );
+};
