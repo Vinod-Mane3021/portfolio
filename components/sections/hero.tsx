@@ -1,3 +1,4 @@
+import { Dot } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -19,14 +20,18 @@ export const Hero = () => {
       </div>
 
       {/* Text Content */}
-      <div className="mt-8 text-center max-w-2xl space-y-5">
+      <div className="mt-8 text-center max-w-2xl space-y-5 flex flex-col items-center ">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           <span className="wave">👋</span> {"Hey, I'm "}
-          <span className="">Vinod</span>!
+          <span className="">Vinod</span> !
         </h1>
 
-        <p className="text-xl md:text-xl font-semibold text-muted-foreground">
-          Full-Stack Developer | Frontend Developer
+        <p className="flex-col items-center text-xl md:text-xl font-semibold text-muted-foreground">
+          <span className="flex items-center">
+            Frontend <Dot /> MERN <Dot />
+            Full-Stack
+          </span>
+          <span className="text-center">Developer</span>
         </p>
 
         <p className="text-lg md:text-lg text-muted-foreground/80 leading-relaxed">
