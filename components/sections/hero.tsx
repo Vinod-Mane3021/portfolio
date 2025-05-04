@@ -1,16 +1,17 @@
+import { myImage1 } from "@/constants/images";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
 export const Hero = () => {
-  const myImage = "/images/me1.jpg";
+  
   return (
     <section className="w-full flex flex-col items-center mt-10">
       {/* profile */}
       <div className="border w-fit rounded-full p-4">
         <div className="border w-fit rounded-full p-2 shadow shadow-muted-foreground">
           <Image
-            src={myImage}
+            src={myImage1}
             alt="my photo"
             height={100}
             width={100}
