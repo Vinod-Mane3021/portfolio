@@ -2,6 +2,7 @@ import { myImage1 } from "@/constants/images";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { CustomTooltip } from "../custom-tooltip";
 
 export const Hero = () => {
   
@@ -10,13 +11,15 @@ export const Hero = () => {
       {/* profile */}
       <div className="border w-fit rounded-full p-4">
         <div className="border w-fit rounded-full p-2 shadow shadow-muted-foreground">
-          <Image
-            src={myImage1}
-            alt="my photo"
-            height={100}
-            width={100}
-            className="rounded-full"
-          />
+          <CustomTooltip label="Vinod Mane">
+            <Image
+              src={myImage1}
+              alt="my photo"
+              height={100}
+              width={100}
+              className="rounded-full"
+            />
+          </CustomTooltip>
         </div>
       </div>
 
